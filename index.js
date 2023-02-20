@@ -11,9 +11,7 @@
  * Module dependencies.
  */
 
-let originalMulter = require('fix-esm').require('multer');
-
-if (originalMulter.default) originalMulter = originalMulter.default;
+const originalMulter = require('multer');
 
 function multer(options) {
   const m = originalMulter(options);
